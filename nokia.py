@@ -141,7 +141,7 @@ match menu_choice:
                 subOptions1 = int(input("Input Number Choice: "))
                 match subOptions1:
                     case 1: 
-                        print("Set");
+                        print("Set")
                             
                         set_menu = """
 ================================ SET ================================
@@ -226,7 +226,7 @@ match menu_choice:
                                   [Select]
                                   1.  Last call duration
                                   2.  All calls' duration
-                                  3.  Received calls' duration
+                                  3. '/' Received calls' duration
                                   4.  Dialled calls' duration
                                   5.  Clear timers
 ================================================================================
