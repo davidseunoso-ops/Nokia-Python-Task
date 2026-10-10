@@ -1,7 +1,6 @@
 def home():
     global click_home
     click_home = True
-    print("Returning to Main Menu...")
 
 click_home = False
 
