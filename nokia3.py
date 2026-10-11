@@ -18,7 +18,7 @@ def main_menu():
                           13. Profiles
                           14. Services
                           15. SIM services
-                          0.  Exit
+                          0.  Turn off
 ================================================================
 """
 
@@ -43,7 +43,7 @@ def main_menu():
             case "14":  print("Services")
             case "15":  print("SIM services")
             case "0":   print("Nokia phone turned off.")
-                break
+                        break
             case _:     print("Invalid")
 
 
@@ -90,7 +90,7 @@ def phone_book_menu():
             case "8":   print('Send your b"card')
             case "9":   print("Options")
 
-                options = """
+                        options = """
 ============================ OPTIONS ====================================
                             [Select]
                             1.  Memory in use
@@ -102,20 +102,20 @@ def phone_book_menu():
 
 """
 
-                while True:
-                    print(options)
-                    sub_options = input("Enter the number: ")
+                        while True:
+                            print(options)
+                            sub_options = input("Enter the number: ")
 
-                    match sub_options:
-                        case "99":
-                            return
-                        case "0":
-                            break
+                            match sub_options:
+                                case "99":
+                                    return
+                                case "0":
+                                    break
 
-                        case "1":   print("Memory in use")
-                        case "2":   print("Type of view")
-                        case "3":   print("Memory status")
-                        case _:     print("Invalid")
+                                case "1":   print("Memory in use")
+                                case "2":   print("Type of view")
+                                case "3":   print("Memory status")
+                                case _:     print("Invalid")
 
             case "10":
                 print("Speed dials")
@@ -164,7 +164,7 @@ def messages_menu():
             case "6":   print("Smileys")
             case "7":   print("Message settings")
 
-                message_settings = """
+                        message_settings = """
 ============================= MESSAGE SETTINGS =================================
                               Options[Select]
                               1.  Set 1
@@ -174,20 +174,20 @@ def messages_menu():
 ================================================================================
 """
 
-                while True:
-                    print(message_settings)
-                    subOptions1 = input("Input Number Choice: ")
+                        while True:
+                            print(message_settings)
+                            subOptions1 = input("Input Number Choice: ")
 
-                    match subOptions1:
-                        case "99":
-                            return
-                        case "0":
-                            break
+                        match subOptions1:
+                            case "99":
+                                return
+                            case "0":
+                                break
 
-                        case "1":
-                            print("Set")
+                            case "1":
+                                print("Set")
 
-                            set_menu = """
+                                set_menu = """
 ================================ SET ================================
                               [Select]
                               1.  Message centre number
@@ -198,25 +198,25 @@ def messages_menu():
 =====================================================================
 """
 
-                            while True:
-                                print(set_menu)
-                                subOption2 = input("Input Number Choice: ")
+                                while True:
+                                    print(set_menu)
+                                    subOption2 = input("Input Number Choice: ")
 
-                                match subOption2:
-                                    case "99":
-                                        return
-                                    case "0":
-                                        break
+                                    match subOption2:
+                                        case "99":
+                                            return
+                                        case "0":
+                                            break
 
-                                    case "1":   print("Message centre number")
-                                    case "2":   print("Message sent as")
-                                    case "3":   print("Message validity")
-                                    case _:     print("Invalid")
+                                        case "1":   print("Message centre number")
+                                        case "2":   print("Message sent as")
+                                        case "3":   print("Message validity")
+                                        case _:     print("Invalid")
 
-                        case "2":
-                            print("Common")
+                            case "2":
+                                print("Common")
 
-                            common = """
+                                common = """
 ================================= COMMON ===================================
                                 [Select]
                                 1.  Delivery reports
@@ -227,23 +227,23 @@ def messages_menu():
 ============================================================================
 """
 
-                            while True:
-                                print(common)
-                                subOption3 = input("Input Number Choice: ")
+                                while True:
+                                    print(common)
+                                    subOption3 = input("Input Number Choice: ")
 
-                                match subOption3:
-                                    case "99":
-                                        return
-                                    case "0":
-                                        break
+                                    match subOption3:
+                                        case "99":
+                                            return
+                                        case "0":
+                                            break
 
-                                    case "1":   print("Delivery reports")
-                                    case "2":   print("Reply via same centre")
-                                    case "3":   print("Character support")
-                                    case _:     print("Invalid")
+                                        case "1":   print("Delivery reports")
+                                        case "2":   print("Reply via same centre")
+                                        case "3":   print("Character support")
+                                        case _:     print("Invalid")
 
-                        case _:
-                            print("Invalid")
+                            case _:
+                                print("Invalid")
 
             case "8":
                 print("Info service")
@@ -290,7 +290,7 @@ def call_register_menu():
             case "4":   print("Erased recent call lists")
             case "5":   print("Call duration")
 
-                call_duration = """
+                        call_duration = """
 ================================== CALL DURATION ===============================
                                   [Select]
                                   1.  Last call duration
@@ -303,22 +303,22 @@ def call_register_menu():
 ================================================================================
 """
 
-                while True:
-                    print(call_duration)
-                    duration = input("Input Number Choice: ")
+                        while True:
+                            print(call_duration)
+                            duration = input("Input Number Choice: ")
 
-                    match duration:
-                        case "99":
-                            return
-                        case "0":
-                            break
+                            match duration:
+                                case "99":
+                                    return
+                                case "0":
+                                    break
 
-                        case "1":   print("Last call duration")
-                        case "2":   print("All calls' duration")
-                        case "3":   print("Received calls' duration")
-                        case "4":   print("Dialled calls' duration")
-                        case "5":   print("Clear timers")
-                        case _:     print("Invalid")
+                                case "1":   print("Last call duration")
+                                case "2":   print("All calls' duration")
+                                case "3":   print("Received calls' duration")
+                                case "4":   print("Dialled calls' duration")
+                                case "5":   print("Clear timers")
+                                case _:     print("Invalid")
 
             case "6":
                 print("Show call costs")
